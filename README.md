@@ -21,8 +21,8 @@ To get this project up and running on your local machine, follow these steps:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME.git
-cd YOUR_REPOSITORY_NAME
+git clone https://github.com/muhammad-huzaifa-coderzhunt/YOUR_REPOSITORY_NAME.git
+cd API_TESTING_PROJECT
 ```
 *(Replace `YOUR_GITHUB_USERNAME` and `YOUR_REPOSITORY_NAME` with your actual GitHub details)*
 
