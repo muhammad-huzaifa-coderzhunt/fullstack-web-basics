@@ -1,0 +1,652 @@
+{
+	"info": {
+		"_postman_id": "cea06cd0-0e4c-4b54-9c88-564900fdbda6",
+		"name": "Users Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47723330",
+		"_collection_link": "https://xaifikhan768-5667845.postman.co/workspace/4cc825d6-0acc-4231-87f0-2860851cdaf9/collection/47723330-cea06cd0-0e4c-4b54-9c88-564900fdbda6?action=share&source=collection_link&creator=47723330"
+	},
+	"item": [
+		{
+			"name": "get Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/api/v1/users",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "list of users retrieved",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/users",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "408"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"198-4V2NvSo4kyC0FwuuIcIeZCaiJDE\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 27 Aug 2025 18:32:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"68af37a602639d4a424800be\",\n        \"firstName\": \"hassan \",\n        \"lastName\": \"iqbal\",\n        \"email\": \"admin@coderzhunt.com\",\n        \"password\": \"kdoindubd\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"68af37ca02639d4a424800c1\",\n        \"firstName\": \"hassan \",\n        \"lastName\": \"iqbal\",\n        \"email\": \"admin@coderzhunt.com\",\n        \"password\": \"p0o9i8u7\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"68af390002639d4a424800c5\",\n        \"firstName\": \"babar\",\n        \"lastName\": \"azam\",\n        \"email\": \"babarazaam@gmai.com\",\n        \"password\": \"poiuytr\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "add user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Shahzad\",\r\n    \"lastName\": \"Noor\",\r\n    \"email\": \"shahzad@gmail.com\",\r\n    \"password\": \"shahzad12321\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/v1/users",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "user creation successful",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Shahzad\",\r\n    \"lastName\": \"Noor\",\r\n    \"email\": \"shahzad@gmail.com\",\r\n    \"password\": \"shahzad12321\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/users",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "136"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"88-4tu1vEzIwo1xah6iysRk5Z5//oQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 27 Aug 2025 18:34:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"firstName\": \"Shahzad\",\n    \"lastName\": \"Noor\",\n    \"email\": \"shahzad@gmail.com\",\n    \"password\": \"shahzad12321\",\n    \"_id\": \"68af4fc402639d4a424800d0\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "get user by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/api/v1/users/68af37ca02639d4a424800c1",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"68af37ca02639d4a424800c1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "list of user by id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/users/68af37ca02639d4a424800c1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"68af37ca02639d4a424800c1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "136"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"88-omBj+9OLRRLPCAwM1O1Vpexqm2Q\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 27 Aug 2025 18:54:29 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"68af37ca02639d4a424800c1\",\n    \"firstName\": \"hassan \",\n    \"lastName\": \"iqbal\",\n    \"email\": \"admin@coderzhunt.com\",\n    \"password\": \"p0o9i8u7\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "replace user by ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": \"68af37ca02639d4a424800c1\",\r\n    \"firstName\": \"Ahatsham \",\r\n    \"lastName\": \"Raza\",\r\n    \"email\": \"admin@coderzhunt.com\",\r\n    \"password\": \"p0o9i8u7\",\r\n    \"__v\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/v1/users/68af37ca02639d4a424800c1",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"68af37ca02639d4a424800c1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "updated user data",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"68af37ca02639d4a424800c1\",\r\n    \"firstName\": \"Ahatsham \",\r\n    \"lastName\": \"Raza\",\r\n    \"email\": \"admin@coderzhunt.com\",\r\n    \"password\": \"p0o9i8u7\",\r\n    \"__v\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/users/68af37ca02639d4a424800c1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"68af37ca02639d4a424800c1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "137"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"89-JV51VDt6T+feb3I/H10LTg41QDQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 27 Aug 2025 18:59:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"68af37ca02639d4a424800c1\",\n    \"firstName\": \"Ahatsham \",\n    \"lastName\": \"Raza\",\n    \"email\": \"admin@coderzhunt.com\",\n    \"password\": \"p0o9i8u7\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "deleted user by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": \"68af37ca02639d4a424800c1\",\r\n    \"firstName\": \"Ahatsham \",\r\n    \"lastName\": \"Raza\",\r\n    \"email\": \"admin@coderzhunt.com\",\r\n    \"password\": \"p0o9i8u7\",\r\n    \"__v\": 0\r\n}"
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/v1/users/68af37ca02639d4a424800c1",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"68af37ca02639d4a424800c1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "list of deleted user",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"68af37ca02639d4a424800c1\",\r\n    \"firstName\": \"Ahatsham \",\r\n    \"lastName\": \"Raza\",\r\n    \"email\": \"admin@coderzhunt.com\",\r\n    \"password\": \"p0o9i8u7\",\r\n    \"__v\": 0\r\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/users/68af37ca02639d4a424800c1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"68af37ca02639d4a424800c1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "26"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1a-SxWmqeC7m5dfbMyk2X1h0QFZHuU\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 27 Aug 2025 19:01:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Deleted User\"\n}"
+				}
+			]
+		},
+		{
+			"name": "delete all users",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/api/v1/users",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "user deletion succesful",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/users",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "31"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1f-ldaE9VqPIwIhDTrABjKj21X/pXs\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 27 Aug 2025 19:45:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"All users deleted\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Updated user data",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \" Faizan \"\r\n \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/v1/users/68af652f5dbb8511b71990f0",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"68af652f5dbb8511b71990f0"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "user data  updated successfully",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \" Faizan \"\r\n \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/users/68af652f5dbb8511b71990f0",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"68af652f5dbb8511b71990f0"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "138"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8a-+aNDLP+lmMcDw1ph1t6ar/KIfyQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 27 Aug 2025 20:09:35 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"68af652f5dbb8511b71990f0\",\n    \"firstName\": \" Faizan \",\n    \"lastName\": \"Iqbal\",\n    \"email\": \"MohsinIqabal@gmail.com\",\n    \"password\": \"zxcvbnm\",\n    \"__v\": 0\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	]
+}
