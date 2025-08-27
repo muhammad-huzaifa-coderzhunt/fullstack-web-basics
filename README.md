@@ -14,6 +14,17 @@ This project provides a complete solution for user management, including a backe
 - `frontend/`: Contains the static files for the user interface, including HTML pages, CSS stylesheets, and JavaScript for client-side logic.
 - `postman/`: Contains a Postman collection for testing the backend API endpoints.
 
+## Screenshots
+
+### Sign-in Page
+![Sign-in Page](screenshots/sign-in-page.png)
+
+### Sign-up Page
+![Sign-up Page](screenshots/sign-up-page.png)
+
+### Users Table
+![Users Table](screenshots/users-table.png)
+
 ## Setup and Running the Project
 
 To get this project up and running on your local machine, follow these steps:
