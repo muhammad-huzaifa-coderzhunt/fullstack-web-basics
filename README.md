@@ -32,10 +32,9 @@ To get this project up and running on your local machine, follow these steps:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/muhammad-huzaifa-coderzhunt/YOUR_REPOSITORY_NAME.git
-cd API_TESTING_PROJECT
+git clone https://github.com/muhammad-huzaifa-coderzhunt/fullstack-web-basics.git
+cd fullstack-web-basics
 ```
-*(Replace `YOUR_GITHUB_USERNAME` and `YOUR_REPOSITORY_NAME` with your actual GitHub details)*
 
 ### 2. Backend Setup
 
